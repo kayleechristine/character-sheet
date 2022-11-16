@@ -1,6 +1,9 @@
 :root {
     /*background-color: royalblue;*/
 }
+html {
+    background: linear-gradient(0deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%) fixed no-repeat;
+}
 header {
     display: flex;
     justify-content: center;
@@ -13,3 +16,4 @@ header>div {
     width: 33%;
     padding: 1em;
 }
+

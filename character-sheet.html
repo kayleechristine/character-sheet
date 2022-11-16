@@ -14,7 +14,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header"></header>
+    <header id="header">
+
+     <div className="name-div">
+        <strong>Character Name: </strong>
+        <p className="name">char.name</p>
+        </div>
+        <div className="char-div">
+        <strong>Race: </strong>
+        <p className="race">' + char.race + '</p>\n' +
+        //         '        <strong>Background: </strong>' +
+        //         '        <p className="background">' + char.background + '</p>\n' +
+        //         '        <strong>Alignment: </strong>' +
+        //         '        <p className="alignment">' + char.alignment + '</p>\n' +
+        //         '        <strong>Exp: </strong>' +
+        //         '        <p className="exp-points">' + char.exp + '</p>\n' +
+        //         '    </div>';
+        //     html += '<div className="class-div">\n' +
+        //         '        <strong>Class: </strong>' +
+        <p className="class">char.class</p>
+        <strong>Subclass: </strong>
+        <p className="subclass">char.subclass</p>
+        </div>
+
+    </header>
 
     <!--JavaScript-->
     <script src="js/character-sheet.js"></script>
