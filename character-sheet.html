@@ -15,30 +15,38 @@
 </head>
 <body>
     <header id="header">
-
-     <div className="name-div">
-        <strong>Character Name: </strong>
-        <p className="name">char.name</p>
+        <div id="name-div">
+            <span id="name" class="input"></span>
+              <span class="label">Name</span>
         </div>
-        <div className="char-div">
-        <strong>Race: </strong>
-        <p className="race">' + char.race + '</p>\n' +
-        //         '        <strong>Background: </strong>' +
-        //         '        <p className="background">' + char.background + '</p>\n' +
-        //         '        <strong>Alignment: </strong>' +
-        //         '        <p className="alignment">' + char.alignment + '</p>\n' +
-        //         '        <strong>Exp: </strong>' +
-        //         '        <p className="exp-points">' + char.exp + '</p>\n' +
-        //         '    </div>';
-        //     html += '<div className="class-div">\n' +
-        //         '        <strong>Class: </strong>' +
-        <p className="class">char.class</p>
-        <strong>Subclass: </strong>
-        <p className="subclass">char.subclass</p>
+        <div id="char-div">
+            <div class="container">
+                <span id="race" class="input"></span>
+                <span class="label">Race</span>
+            </div>
+            <div class="container">
+                <span id="background" class="input"></span>
+                <span class="label">Background</span>
+            </div>
+            <div class="container">
+                <span id="alignment" class="input"></span>
+                <span class="label">Alignment</span>
+            </div>
+            <div class="container">
+                <span id="exp-points" class="input"></span>
+                <span class="label">Experience</span>
+            </div>
         </div>
-
+        <div id="class-div">
+            <span id="class" class="input"></span>
+              <span class="label">Class</span>
+            <span id="subclass" class="input"></span>
+              <span class="label">Subclass</span>
+        </div>
     </header>
 
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!--JavaScript-->
     <script src="js/character-sheet.js"></script>
 </body>

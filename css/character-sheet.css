@@ -1,5 +1,9 @@
 :root {
-    /*background-color: royalblue;*/
+    --dark: #01161E;
+    --hue1: #124559;
+    --hue2: #598392;
+    --hue3: #AEC3B0;
+    --light: #EFF6E0;
 }
 html {
     background: linear-gradient(0deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%) fixed no-repeat;
@@ -8,6 +12,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--hue2);
 }
 header>div {
     display: flex;
@@ -15,5 +20,24 @@ header>div {
     align-items: center;
     width: 33%;
     padding: 1em;
+}
+.label {
+    text-decoration: overline black;
+}
+#char-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.input {
+    margin-bottom: .4em;
 }
 

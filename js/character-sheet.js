@@ -1,5 +1,5 @@
 "use strict";
-(function() {
+$(function() {
 
     let character = {
         name: "Nix",
@@ -14,40 +14,15 @@
         exp: null,
     }
 
-    // function renderChar(char) {
-    //     let html = '<div className="name-div">' +
-    //         '           <strong>Character Name: </strong>' +
-    //         '           <p className="name">' + char.name + '</p>' +
-    //         '       </div>';
-    //     html += '<div className="char-div">\n' +
-    //         '        <strong>Race: </strong>' +
-    //         '        <p className="race">' + char.race + '</p>\n' +
-    //         '        <strong>Background: </strong>' +
-    //         '        <p className="background">' + char.background + '</p>\n' +
-    //         '        <strong>Alignment: </strong>' +
-    //         '        <p className="alignment">' + char.alignment + '</p>\n' +
-    //         '        <strong>Exp: </strong>' +
-    //         '        <p className="exp-points">' + char.exp + '</p>\n' +
-    //         '    </div>';
-    //     html += '<div className="class-div">\n' +
-    //         '        <strong>Class: </strong>' +
-    //         '        <p className="class">' + char.class + '</p>\n' +
-    //         '        <strong>Subclass: </strong>' +
-    //         '        <p className="subclass">' + char.subclass + '</p>\n' +
-    //         '    </div>';
-    //
-    //     return html;
-    // }
+    $('#name').html(character.name);
+    $('#race').html(character.race);
+    $('#class').html(character.class);
+    $('#subclass').html(character.subclass);
+    $('#background').html(character.background);
+    $('#alignment').html(character.alignment);
+    $('#exp').html(character.exp);
 
-    // function renderCoffees(coffees) {
-    //     let html = '';
-    //     for(let i = 0; i < coffees.length; i++) {
-    //         html += renderCoffee(coffees[i]);
-    //     }
-    //     return html;
-    // }
-
-    let headerDiv = document.querySelector('#header');
-    headerDiv.innerHTML = renderChar(character);
+    // let headerDiv = document.querySelector('#header');
+    // headerDiv.innerHTML = renderChar(character);
 
 })();
