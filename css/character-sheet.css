@@ -8,13 +8,14 @@
 html {
     background: linear-gradient(0deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%) fixed no-repeat;
 }
-header {
+#top-div {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
     background-color: var(--hue2);
 }
-header>div {
+#top-div>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +24,9 @@ header>div {
 }
 .label {
     text-decoration: overline black;
+}
+#ribbon {
+    fill: blue;
 }
 #char-div {
     display: flex;
